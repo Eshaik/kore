@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  /* Crimson Hues - Kore Brand Palette */
+  --background: #ffffff;
+  --foreground: #250902;
+  --primary: #800E13;
+  --primary-light: #AD2831;
+  --primary-dark: #38040E;
+  --primary-darker: #250902;
+  --accent: #AD2831;
+  --accent-light: #c43a44;
+  --secondary: #fdf2f2;
+  --muted: #6b5555;
+  --border: #e8d5d5;
+  --success: #10b981;
+  --card: #ffffff;
+  --card-hover: #fdf8f8;
+  --wine: #640D14;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-darker: var(--primary-darker);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-success: var(--success);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-wine: var(--wine);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
